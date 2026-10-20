@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SW1 Q2</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <style>
+        body {
+            background: #f6c99b;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .card {
+            background: #f6c99b;
+            border: 4px solid white;
+            border-radius: 30px;
+            max-width: 450px;
+            margin: 70px auto;
+            padding: 30px;
+            box-shadow: none;
+        }
+        h1, p {
+            color: white;
+            font-weight: bold;
+        }
+        .form-label {
+            color: white;
+        }
+        .form-control {
+            background: #fff1df;
+            color: #80583d;
+            border: none;
+            border-radius: 15px;
+            padding: 12px;
+        }
+        .form-control:focus {
+            background: #fffaf3;
+            border-color: #e8a46b;
+            box-shadow: none;
+        }
+        .btn-orang {
+            background: #e8a46b;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 12px;
+        }
+        .btn-orang:hover {
+            background: #d98d50;
+            color: white;
+        }
+        #result {
+            background: #ffebcc;
+            color: #80583d;
+            border-radius: 15px;
+            padding: 15px;
+            min-height: 50px;
+            overflow-wrap: anywhere;
+        }
+        h5 {
+            color: white;
+        }
+</style>
+</head>
+<body class="container">
+    <div class="card text-center">
+        <h1>MAPM CLUB</h1>
+        <p>♡ Are you from here? ♡</p>
+        <br>
+        <div class="text-start mb-3">
+            <label for="first_name" class="form-label">First name</label>
+            <input type="text" id="first_name" class="form-control" placeholder="Enter your first name">
+        </div>
+        <div class="text-start mb-3">
+            <label for="last_name" class="form-label">Last name</label>
+            <input type="text" id="last_name" class="form-control" placeholder="Enter your last name">
+        </div>
+        <button type="button" class="btn btn-orang w-100 mb-3" py-click="check_member">Check Membership ♡</button>
+        <h5>Result</h5>
+        <div id="result" aria-live="polite">your result will appear here!</div>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
